@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  float: left;
+  width: 30px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+.banner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 60px;
+}
+.banner img {
+  width: 100%;
+  display: block;
+}
+.banner .page {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+.banner .page ul {
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+}
+.current {
+  color: #ff6700;
+}
+
+.main {
+  margin: 0 auto;
+  width: 682px;
+  height: 160px;
+  background: #e6e9ff;
+  border-radius: 20px;
+}
+
+.main p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 32px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  line-height: 40px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1"
+    />
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/template_pc.css" />
+
+    <!-- <script type="text/javascript" src="./VueTest.vue"></script> -->
+  </head>
+
+  <body>
+    <div id="app">
+      <div
+        id="banner"
+        class="banner"
+        @mouseenter="clearInv()"
+        @mouseleave="startInv()"
+      >
+        <!--clearInv()-->
+        <div class="item">
+          <a :href="bannerImagePool[currentIndex].url">
+            <img :src="bannerImagePool[currentIndex].image" />
+          </a>
+        </div>
+
+        <div class="page" v-if="this.bannerImagePool.length > 1">
+          <ul>
+            <li @click="gotoPage(prevIndex)">&lt;</li>
+            <li
+              v-for="(item,index) in bannerImagePool"
+              @click="gotoPage(index)"
+              :class="{'current':currentIndex==index}"
+            >
+              {{index+1}}
+            </li>
+            <li @click="gotoPage(nextIndex)">&gt;</li>
+          </ul>
+        </div>
+      </div>
+
+      <h1>工地通下载链接</h1>
+
+      <div id="main" class="main">
+        <p>立即下载</p>
+      </div>
+
+      <button id="b1" onclick="greeting()">greeting click</button>
+      <button id="b2" onclick="count()">count click</button>
+    </div>
+  </body>
+
+  <script src="./js/vue.js"></script>
+  <script src="./js/page.js"></script>
+</html>

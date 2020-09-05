@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.banner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 60px;
+  text-align: center;
+}
+.banner img {
+  width: 100%;
+  display: block;
+}
+.banner .page {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+.current {
+  color: #ff6700;
+}
+.banner .page ul {
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+}
